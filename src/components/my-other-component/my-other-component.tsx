@@ -3,11 +3,11 @@ import { StyledHost } from '../../helpers/StyledHost';
 import { format } from '../../utils/utils';
 
 @Component({
-  tag: 'my-component',
-  styleUrl: 'my-component.css',
+  tag: 'my-other-component',
+  styleUrl: 'my-other-component.css',
    shadow: true,
 })
-export class MyComponent {
+export class MyOtherComponent {
   /**
    * The first name
    */
@@ -28,6 +28,6 @@ export class MyComponent {
   }
 
   render() {
-    return <StyledHost><div class="bg-red-100">Hello, World! I'm {this.getText()}</div></StyledHost>;
+    return <StyledHost><div class="bg-green-900">Hello, World! I'm {this.getText()}</div></StyledHost>;
   }
 }
